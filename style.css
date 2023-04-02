@@ -1,0 +1,70 @@
+.calculator {
+    text-align: center;
+    margin: 0 auto;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    width: 400px;
+}
+
+.calculator input[type='text'] {
+    width: 100%;
+    height: 80px;
+    background-color: #252525;
+    color: #fff;
+    text-align: right;
+    font-size: 50px;
+    border: none;
+    padding: 0 20px;
+    box-sizing: border-box;
+}
+
+.calculator .container {
+    width: 100%;
+}
+
+.calculator .container .kerangka {
+    display: flex;
+    background-color: #252525;
+}
+
+.calculator .container .kerangka  button{
+    height: 85px;
+    background-color: rgba(128, 128, 128, 0.541);
+    border: 1px solid black;
+    font-size: 32px;
+    color: #fff;
+    width: 25%;
+    outline: none;
+    border-radius: 50px;
+    margin: 5px;
+    text-align: center;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.calculator .container .kerangka .button-top {
+    background-color: #d3d3d3f2;
+    color: black;
+}
+
+/* .calculator .container .kerangka .button-zero {
+    width: 50%;
+} */
+
+.calculator .container .kerangka .operator {
+    background-color: orange;
+}
+
+.calculator .container .kerangka .button-top:hover {
+    background-color: rgb(157, 153, 153);
+    color: #fff;
+}
+
+.calculator .container .kerangka .button:hover, .calculator .container .kerangka .button-zero:hover {
+    background-color: rgba(169, 169, 169, 0.133);
+    color: #fff;
+}
+
+.calculator .container .kerangka .operator:hover {
+    background-color: darkorange;
+}

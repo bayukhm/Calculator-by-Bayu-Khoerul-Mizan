@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bayu Khoerul Mizan</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- MAIN START -->
+    <div class="calculator">
+        <div id="layar">
+            <input type="text" id="operasi">
+            <!-- menapilkan operasi -->
+
+            <input type="text" id="hasil">
+            <!-- menampilkan hasil dari operasi -->
+        </div>
+
+        <!-- container tombol -->
+        <div class="container">
+            <!-- kerangka tombol -->
+            <div class="kerangka">
+                <button class="button-top" onclick="Clear()">AC</button>
+                <!-- function Clear(), C nya harus kapital -->
+                <button class="button-top" onclick="del('del')">del</button>
+                <button class="button-top" onclick="hitung('/100')">%</button>
+                <button class="operator" onclick="hitung('/')">&divide;</button>
+            </div>
+            <div class="kerangka">
+                <button class="button" onclick="hitung('7')">7</button>
+                <button class="button" onclick="hitung('8')">8</button>
+                <button class="button" onclick="hitung('9')">9</button>
+                <button class="operator" onclick="hitung('*')">&times;</button>
+            </div>
+            <div class="kerangka">
+                <button class="button" onclick="hitung('4')">4</button>
+                <button class="button" onclick="hitung('5')">5</button>
+                <button class="button" onclick="hitung('6')">6</button>
+                <button class="operator" onclick="hitung('-')">&minus;</button>
+            </div>
+            <div class="kerangka">
+                <button class="button" onclick="hitung('1')">1</button>
+                <button class="button" onclick="hitung('2')">2</button>
+                <button class="button" onclick="hitung('3')">3</button>
+                <button class="operator" onclick="hitung('+')">&plus;</button>
+            </div>
+            <div class="kerangka">
+                <button class="button-zero" onclick="hitung('0')">0</button>
+                <button class="button" onclick="hitung('.')">.</button>
+                <button class="button" onclick="ans()">ans</button>
+                <button class="operator" onclick="result()">=</button>
+            </div>
+        </div>
+    </div>
+    <!-- MAIN END -->
+    
+    <script type="text/javascript" src="script.js"></script>
+</body>
+</html>
